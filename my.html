@@ -1,0 +1,246 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>프랜차이즈 치킨</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="chicken.jpg" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#BBQ" data-rel="dialog">BBQ</a></li>
+				<li><a href="#BHC" data-rel="dialog">BHC</a></li>
+				<li><a href="#Cheo"  data-rel="dialog">처갓집</a></li>
+				<li><a href="#norang" data-rel="dialog">노랑통닭</a></li>
+				<li><a href="#kyochon" data-rel="dialog">교촌치킨</a></li>
+				<li><a href="#kyochon" data-rel="dialog">포트폴리오</a></li>
+				</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>@copyright KimDongHwan</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="BBQ" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>BBQ</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="bbq.png">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>BBQ소개</h3>
+					<p>미원, 마니커의 셀러리맨 출신 윤홍근(현재 비비큐 회장)이 만든 한국식 치킨 프랜차이즈. 1990년대부터 대표적인 치킨 프랜차이즈 업체로 성장하였으며, 자회사로는 닭익는 마을, 올떡 등이 있다. BHC 치킨도 최초 BBQ 치킨의 자회사 였으나 매각했다. 현재 BHC 치킨은 미국계 사모펀드의 소유. 1995년 11월 15일 연천군 전곡에서 1호점이 오픈하였다.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>BBQ 광고영상</h3>
+					<li><video width="100%" height="240" controls>
+  							<source src="BBQ CF.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</li><br/>
+				</div>
+				<div data-role="collapsible" >
+					<h3>BBQ대표메뉴</h3>
+					<img src="bbqchicken.jpg">
+					<p>황금올리브 치킨 </p>
+					<p>가장 대표적인 후아리드 치킨이며 선호도가 가장높다.</p>
+					</div>
+				<div data-role="collapsible">
+					<h3>BBQ전화번호</h3>
+					<p>1588-9282</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>@copyright KimDongHwan</h1>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="BHC" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>		
+			<h1>BHC</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="bhc.jpg">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>BHC소개</h3>
+					<P>대한민국의 치킨 브랜드. 1997년 별하나치킨이라는 이름으로 창립했으며 그 유명한 콜팝[1]을 필두로 야채치킨[2] 등의 특이한 제품으로 마이너적인 인기를 누리다가 2000년에 이니셜을 따서 BHC라는 이름을 앞세우게 되었다.</P>
+					</div>
+				<div data-role="collapsible">
+					<h3>BHC 광고영상</h3>
+					<li><video width="100%" height="240" controls>
+  							<source src="BHC.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</li><br/>
+				</div>
+				<div data-role="collapsible" >
+					<h3>BHC 대표메뉴</h3>
+					<img src="BHCchicken.jpg">
+					<p>뿌링클 치킨 </p>
+					<p>달콤한 가루가 뿌려져있어서 선호도가 가장높다.</p>
+					<img src="cheeze.jpg">
+					<p>치즈볼</p>
+					<p>달콤하면서 쭉늘어나는 치즈볼은 현재 bhc메뉴중 인기가 가장높다.</p>
+					</div>
+				<div data-role="collapsible">
+					<h3>BHC전화번호</h3>
+					<p>1577-5577</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>@copyright KimDongHwan</h1>
+		</div>		
+	</div>
+	
+
+	<div data-role="page" id="Cheo" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>		
+			<h1>처갓집</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="cheo.jpg">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>처갓집 치킨 소개</h3>
+					<p>2002년 설립된 한국의 (양념)치킨전문 업체. 설립년도를 보고 순간 멈칫했겠지만 사실은 페리카나, 스모프 양념통닭, 사또치킨, 맥시칸치킨, 이서방 양념통닭과 더불어 한세대를 풍미한 '처갓집 양념통닭'의 후신이 맞다. 치킨 갤러리 내에서 처GOD집 또는 갓갓집으로 불리고 있다.</p></div>
+				<div data-role="collapsible">
+					<h3>처갓집 광고영상</h3>
+					<p>2010년도 까지는 광고가 나왔으나 현재는 만들어 지지 않고 있는듯 하다.</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>처갓집 대표메뉴</h3>
+					<img src="cheochicken.jpg" width="100%" height="240">
+					<p>슈프림 양념 치킨 </p>
+					<p>바삭한 후라이드 치킨 위에 허니올리고당야채양념과 신비의 하얀 소스가 뿌려진 이색적인 양념치킨.</p>
+					<img src="soychicken.jpg">
+					<p>와락 간장치킨</p>
+					<p>바삭하게 튀긴 치킨을 깊은 볼에서 간장소스와 함께 강한 불로 볶아내어 달콤짭쪼름한 맛과 향을 느낄수 있는 치킨.</p>
+					</div>
+				<div data-role="collapsible">
+					<h3>처갓집 전화번호</h3>
+					<p>1599-9282</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>@copyright KimDongHwan</h1>
+		</div>		
+	</div>
+	<div data-role="page" id="norang" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>		
+			<h1>노랑통닭</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="norang.jpg">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>노랑통닭 소개</h3>
+					<p>대한민국의 치킨 브랜드. 부산에서 시작한 프랜차이즈. 닭을 무쇠 가마솥에 튀기는 것과 무염지 닭을 쓰는 것이 특징이다. 본사에서도 가마솥 조리 방식과 저나트륨을 중심으로 홍보하고 있다. 공식 홈페이지에 따르면 전국 213개 업소가 있다.</p>
+					</div>
+				<div data-role="collapsible">
+					<h3>노랑통닭 광고영상</h3>
+					<li><video width="100%" height="240" controls>
+  							<source src="norang_cf.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</li><br/>
+				</div>
+				<div data-role="collapsible" >
+					<h3>노랑통닭 대표메뉴</h3>
+					<img src="norangchicken.jpg">
+					<p>3종 세트 치킨</p>
+					<p>후라이드, 양념, 깐풍의 맛을 한번에 느낄수있는 세트 치킨이다.</p>
+					<img src="norangside.png" width="100%" height="240">
+					<p>똥집튀김</p>
+					<p>닭 똥집을 튀긴 튀김으로 사이드 메뉴지만 판매율이 높을정도로 맛있다.</p>
+					</div>
+				<div data-role="collapsible">
+					<h3>노랑통닭 전화번호</h3>
+					<p>1599-9235</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>@copyright KimDongHwan</h1>
+		</div>		
+	</div>
+	<div data-role="page" id="kyochon" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>		
+			<h1>교촌치킨</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="kyochon.png">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>교촌치킨 소개</h3>
+					<p>1991년 3월 13일 경북 구미시 송정동에서 '교촌통닭'으로 시작한 치킨 프랜차이즈. BBQ 이후에 크게 성공한 업체다.</p>
+					</div>
+				<div data-role="collapsible">
+					<h3>교촌치킨 광고영상</h3>
+					<li><video width="100%" height="240" controls>
+  							<source src="kyochon_cf.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</li><br/>
+				</div>
+				<div data-role="collapsible" >
+					<h3>교촌치킨 대표메뉴</h3>
+					<P>대표메뉴가 많아서 2개만 소개 하려고 합니다.</P>
+					<img src="redcombo.jpg" width="100%" height="240">
+					<p>교촌 레드 콤보 </p>
+					<p>다리와 윙부위가 있으며 매우면서 맛있는맛이 매력적이다.</p>
+					<img src="honeycombo.jpg">
+					<p>교촌 허니 콤보</p>
+					<p>달달하면서 접근하기 쉬운맛으로 남녀노소 좋아하는 맛이다.</p>
+					</div>
+				<div data-role="collapsible">
+					<h3>교촌치킨 전화번호</h3>
+					<p>1577-1991</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>@copyright KimDongHwan</h1>
+		</div>		
+	</div>
+	
+	
+</body>
+</html>
